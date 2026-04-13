@@ -24,9 +24,37 @@
         order: -1;
         margin-bottom: 25px;
     }
+
+    .form-group {
+        width: 85%;
+    }
+
+    .form textarea {
+        width: 85%;
+        min-height: 200px;
+    }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 730px) {
+    .header__items h1 {
+        font-size: 60px;
+    }
+
+    .header__items p,
+    .about-text p,
+    .services-p,
+    .reviews-p,
+    .experience__items p,
+    .contact__items-card a,
+    .contact__items-card p {
+        font-size: 20px;
+    }
+
+    .text-h2,
+    .experience__items h3 {
+        font-size: 50px;
+    }
+
     .nav-icon {
         display: none;
     }
@@ -87,8 +115,51 @@
         gap: 30px;
     }
 }
+
 @media screen and (max-width: 540px) {
+    .header__items h1 {
+        font-size: 50px;
+    }
+
+    .header__items p,
+    .about-text p,
+    .services-p,
+    .reviews-p,
+    .experience__items p,
+    .contact__items-card a,
+    .contact__items-card p {
+        font-size: 18px;
+    }
+
+    .text-h2,
+    .experience__items h3 {
+        font-size: 40px;
+    }
+
     .about_items img {
-        max-width: 100%;
+        max-width: 90%;
+    }
+
+    .services-h3 {
+        font-size: 35px;
+    }
+    .services__items:last-child>h3{
+        padding-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .form-group input {
+        width: 100%;
+    }
+
+    .contact__items-card h3 {
+        font-size: 30px;
+    }
+    .contact__items {
+        width: 95%;
     }
 }
