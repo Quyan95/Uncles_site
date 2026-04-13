@@ -1,0 +1,94 @@
+@media screen and (max-width: 1320px) {
+
+    /* about */
+    .about_items img {
+        max-width: 500px;
+    }
+
+    /* Услуги */
+    .services__flex {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .about_items {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    .about_items img {
+        order: -1;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .nav-icon {
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        padding: 15px;
+    }
+
+    .burger-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        border: none;
+        background-color: inherit;
+    }
+
+    .burger-btn_line {
+        background-color: #757272;
+        width: 45px;
+        min-height: 3px;
+    }
+
+    .experiense__flex {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .experience__items {
+        max-width: 100%;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .form textarea {
+        width: 100%;
+        min-height: 200px;
+    }
+
+    .gallery__items img {
+        max-width: 75%;
+    }
+
+    .contact__items {
+        grid-template-columns: repeat(1, 1fr);
+        width: 85%;
+        gap: 25px;
+    }
+
+    .footer__flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .about_items img {
+        max-width: 100%;
+    }
+}

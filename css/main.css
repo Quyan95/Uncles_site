@@ -53,7 +53,7 @@ ul {
     transform: translate(-50%, 0);
     top: 10px;
     max-width: 1140px;
-    width: 100%;
+    width: 95%;
     padding: 15px 25px;
     border-radius: 40px;
     z-index: 1000;
@@ -85,6 +85,9 @@ ul {
 .nav-list ul li>a {
     font-size: 19px;
     font-weight: 500;
+}
+.burger{
+    display: none;
 }
 
 .btn {
@@ -195,6 +198,11 @@ ul {
     padding: 45px 25px 50px 25px;
     text-align: center;
     max-width: 450px;
+    width: 100%;
+}
+.services__items:last-child>h3 {
+    padding-top: 30px;
+    margin-bottom: 50px;
 }
 
 .services-img {
@@ -430,8 +438,6 @@ ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-.footer__items {
 }
 .footer-p {
     font-size: 22px;
