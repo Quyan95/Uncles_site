@@ -55,33 +55,6 @@
         font-size: 50px;
     }
 
-    .nav-icon {
-        display: none;
-    }
-
-    .nav-list {
-        display: none;
-    }
-
-    .burger {
-        display: block;
-        padding: 15px;
-    }
-
-    .burger-btn {
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-        border: none;
-        background-color: inherit;
-    }
-
-    .burger-btn_line {
-        background-color: #757272;
-        width: 45px;
-        min-height: 3px;
-    }
-
     .experiense__flex {
         flex-wrap: wrap;
         gap: 50px;
@@ -114,6 +87,72 @@
         flex-direction: column;
         gap: 30px;
     }
+
+    .nav-icon {
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        padding: 15px;
+    }
+
+    .burger-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        border: none;
+        background-color: inherit;
+    }
+
+    .burger-btn_line {
+        background-color: #2F2E2E;
+        width: 28px;
+        height: 3px;
+        border-radius: 2px;
+    }
+
+    /* Модальное окно */
+    .modal.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .modal-content {
+        padding: 20px;
+    }
+
+    .modal-nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .modal-nav a {
+        display: block;
+        padding: 14px 16px;
+        color: #2F2E2E;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 12px;
+        transition: all 0.2s;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .modal-nav li:last-child a {
+        border-bottom: none;
+    }
+
+    .modal-nav a:hover {
+        background: #f0f7ff;
+        color: var(--btn-color);
+        padding-left: 24px;
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -143,7 +182,8 @@
     .services-h3 {
         font-size: 35px;
     }
-    .services__items:last-child>h3{
+
+    .services__items:last-child>h3 {
         padding-top: 0;
         margin-bottom: 50px;
     }
@@ -159,7 +199,14 @@
     .contact__items-card h3 {
         font-size: 30px;
     }
+
     .contact__items {
         width: 95%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .footer-p {
+        text-align: center;
     }
 }
